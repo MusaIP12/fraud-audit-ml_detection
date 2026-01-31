@@ -43,7 +43,7 @@ This project therefore focuses on **generalisable fraud detection principles** r
 ## 3. ETL Pipeline Architecture
 
 ### 3.1 Medallion Architecture
-The pipeline follows a standard **Bronze → Silver** architecture on **Azure Data Lake Storage Gen2 (ADLS)**:
+The pipeline follows a standard **Bronze → Silver** architecture on **Azure Data Lake Storage Gen2 (ADLS)**.The ELT pipeline implementation is maintained in a separate repository: fraud-audit-elt:
 
 - **Bronze**: Raw ingested datasets
 - **Silver**: Cleaned, validated, and analysis-ready data
@@ -168,6 +168,7 @@ Interpretation is performed at the **latent-pattern level**, consistent with PCA
 ---
 
 ## 12. Technologies Used
+- Azure Data Factory (upstream ELT pipeline)
 - Python (pandas, numpy, scikit-learn, xgboost)
 - SHAP
 - Azure Data Lake Storage Gen2
@@ -181,4 +182,3 @@ Interpretation is performed at the **latent-pattern level**, consistent with PCA
 ✔ Model training and evaluation complete  
 ✔ Decision optimisation complete  
 ✔ Interpretability complete  
-⬜ Literature expansion planned
